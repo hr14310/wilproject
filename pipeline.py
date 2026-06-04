@@ -221,19 +221,28 @@ def flag_frames_with_yolo(frames, frame_indices):
         frame_indices (list): Original frame indices for tracking
 
     Returns:
-        tuple: (flagged_frames, flagged_indices, count of flagged frames)
+        tuple: (flagged_frames, flagged_indices, count of flagged frames, flagged_detections)
+        - flagged_detections: list of dicts with {classes: [...], confidences: [...]} per frame
     """
     if not frames:
-        return [], [], 0
+        return [], [], 0, []
 
     yolo = get_yolo_model()
 
     flagged_frames = []
     flagged_indices = []
+    flagged_detections = []
 
     print(f"\nRunning YOLO triage on {len(frames)} frames...")
 
     for frame_idx, (frame, orig_idx) in enumerate(zip(frames, frame_indices)):
+        # Validate frame shape
+        if frame.ndim != 3 or frame.shape[2] != 3:
+            continue
+
+        if frame.shape[0] < 32 or frame.shape[1] < 32:
+            continue
+
         # Convert normalized frame back to [0, 255] for YOLO
         frame_uint8 = (frame * 255).astype(np.uint8)
 
@@ -242,19 +251,29 @@ def flag_frames_with_yolo(frames, frame_indices):
 
         # Check if any trigger classes were detected
         is_flagged = False
+        detected_classes = []
+        detected_confidences = []
+
         if results and results[0].boxes is not None:
-            detected_classes = results[0].boxes.cls.cpu().numpy()
+            boxes = results[0].boxes
+            detected_classes_indices = boxes.cls.cpu().numpy()
+            confidences = boxes.conf.cpu().numpy()
             class_names = results[0].names
 
-            for cls_idx in detected_classes:
+            for cls_idx, conf in zip(detected_classes_indices, confidences):
                 cls_name = class_names[int(cls_idx)]
                 if cls_name.lower() in TRIGGER_CLASSES:
                     is_flagged = True
-                    break
+                    detected_classes.append(cls_name)
+                    detected_confidences.append(float(conf))
 
         if is_flagged:
             flagged_frames.append(frame)
             flagged_indices.append(orig_idx)
+            flagged_detections.append({
+                "classes": detected_classes,
+                "confidences": detected_confidences
+            })
 
         # Progress indicator
         if (frame_idx + 1) % max(1, len(frames) // 10) == 0:
@@ -262,7 +281,7 @@ def flag_frames_with_yolo(frames, frame_indices):
 
     print(f"✓ YOLO flagged {len(flagged_frames)} frames")
 
-    return flagged_frames, flagged_indices, len(flagged_frames)
+    return flagged_frames, flagged_indices, len(flagged_frames), flagged_detections
 
 
 # ============================================================================
@@ -335,11 +354,45 @@ def classify_with_internvl(flagged_frames, flagged_indices):
 
         print(f"\nRunning CLIP classification on {len(flagged_frames)} flagged frames...")
 
-        # Convert flagged frames back to uint8
-        flagged_frames_uint8 = [(f * 255).astype(np.uint8) for f in flagged_frames]
+        # Convert flagged frames back to uint8 and validate shape
+        flagged_frames_uint8 = []
+        for f in flagged_frames:
+            # Ensure frame is in correct shape (H, W, 3)
+            if f.ndim != 3 or f.shape[2] != 3:
+                continue
 
-        # Convert to PIL images
-        frame_pil = Image.fromarray(cv2.cvtColor(flagged_frames_uint8[0], cv2.COLOR_BGR2RGB))
+            # Convert from [0, 1] to [0, 255]
+            frame_uint8 = (f * 255).astype(np.uint8)
+
+            # Ensure frame is at least 32x32 (CLIP minimum)
+            if frame_uint8.shape[0] < 32 or frame_uint8.shape[1] < 32:
+                # Resize small frames
+                frame_uint8 = cv2.resize(frame_uint8, (224, 224))
+
+            flagged_frames_uint8.append(frame_uint8)
+
+        if not flagged_frames_uint8:
+            return {
+                "bylaw": "UNCERTAIN",
+                "violated": False,
+                "confidence": 0.5,
+                "reasoning": "No valid frames for classification."
+            }
+
+        # Convert first frame to PIL image
+        try:
+            frame_bgr = flagged_frames_uint8[0]
+            frame_rgb = cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2RGB)
+            frame_pil = Image.fromarray(frame_rgb)
+
+        except Exception as e:
+            print(f"⚠ Error converting frame to PIL: {e}")
+            return {
+                "bylaw": "UNCERTAIN",
+                "violated": False,
+                "confidence": 0.5,
+                "reasoning": "Frame conversion failed."
+            }
 
         # Get all bylaws
         bylaws = get_all_bylaws()
@@ -366,54 +419,85 @@ def classify_with_internvl(flagged_frames, flagged_indices):
         bylaw_ids.append("NONE")
 
         # Process image and texts with CLIP (with truncation to fit CLIP's max token length of 77)
-        inputs = processor(
-            text=texts,
-            images=frame_pil,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-            max_length=77
-        )
+        try:
+            inputs = processor(
+                text=texts,
+                images=frame_pil,
+                return_tensors="pt",
+                padding=True,
+                truncation=True,
+                max_length=77
+            )
+
+        except Exception as e:
+            print(f"⚠ Error in CLIP processor: {e}")
+            return {
+                "bylaw": "UNCERTAIN",
+                "violated": False,
+                "confidence": 0.5,
+                "reasoning": "CLIP processor failed."
+            }
 
         # Get model device
         device = next(model.parameters()).device
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
         # Get CLIP logits
-        with torch.no_grad():
-            outputs = model(**inputs)
-            logits_per_image = outputs.logits_per_image
+        try:
+            with torch.no_grad():
+                outputs = model(**inputs)
+                logits_per_image = outputs.logits_per_image
+
+        except Exception as e:
+            print(f"⚠ Error in model forward pass: {e}")
+            return {
+                "bylaw": "UNCERTAIN",
+                "violated": False,
+                "confidence": 0.5,
+                "reasoning": "CLIP model inference failed."
+            }
 
         # Get probabilities
-        probs = torch.softmax(logits_per_image, dim=1)[0]
+        try:
+            probs = torch.softmax(logits_per_image, dim=1)[0]
 
-        # Find best match
-        best_idx = torch.argmax(probs).item()
-        best_bylaw = bylaw_ids[best_idx]
-        best_confidence = probs[best_idx].item()
+            # Find best match
+            best_idx = torch.argmax(probs).item()
+            best_bylaw = bylaw_ids[best_idx]
+            best_confidence = probs[best_idx].item()
 
-        # Determine if violated
-        # If it's not "NONE", we assume it's violated
-        violated = best_bylaw != "NONE"
+            # Determine if violated
+            violated = best_bylaw != "NONE"
 
-        # Find reasoning
-        if best_bylaw == "NONE":
-            reasoning = "No violations detected in the image."
-        else:
-            bylaw_info = next((b for b in bylaws if b['id'] == best_bylaw), None)
-            if bylaw_info:
-                reasoning = f"Detected potential violation of {bylaw_info['name']}"
+            # Find reasoning
+            if best_bylaw == "NONE":
+                reasoning = "No violations detected in the image."
             else:
-                reasoning = "Violation detected"
+                bylaw_info = next((b for b in bylaws if b['id'] == best_bylaw), None)
+                if bylaw_info:
+                    reasoning = f"Detected potential violation of {bylaw_info['name']}"
+                else:
+                    reasoning = "Violation detected"
 
-        prediction = {
-            "bylaw": best_bylaw,
-            "violated": violated,
-            "confidence": float(best_confidence),
-            "reasoning": reasoning
-        }
+            prediction = {
+                "bylaw": best_bylaw,
+                "violated": violated,
+                "confidence": float(best_confidence),
+                "reasoning": reasoning
+            }
 
-        return prediction
+            return prediction
+
+        except Exception as e:
+            print(f"⚠ Error in post-processing: {e}")
+            import traceback
+            traceback.print_exc()
+            return {
+                "bylaw": "UNCERTAIN",
+                "violated": False,
+                "confidence": 0.5,
+                "reasoning": "CLIP post-processing failed."
+            }
 
     except Exception as e:
         import traceback
@@ -515,7 +599,7 @@ def run_pipeline(video_path):
         frames, frame_indices, total_frames = extract_frames(video_path)
 
         # Stage 2: YOLO triage
-        flagged_frames, flagged_indices, num_flagged = flag_frames_with_yolo(frames, frame_indices)
+        flagged_frames, flagged_indices, num_flagged, flagged_detections = flag_frames_with_yolo(frames, frame_indices)
 
         # Stage 3: InternVL4 classification
         prediction = classify_with_internvl(flagged_frames, flagged_indices)
@@ -530,7 +614,8 @@ def run_pipeline(video_path):
             "frames_flagged": num_flagged,
             "prediction": prediction,
             "flagged_frames": flagged_frames,
-            "flagged_indices": flagged_indices
+            "flagged_indices": flagged_indices,
+            "flagged_detections": flagged_detections
         }
 
     except Exception as e:
