@@ -1,440 +1,22 @@
 {
   "metadata": {
-    "created": "2026-05-03T18:21:31.044460",
-    "last_updated": "2026-05-10T21:16:41.526212",
-    "total_predictions": 78
+    "created": "2026-06-06T05:29:19.916756",
+    "last_updated": "2026-06-06T05:41:08.685469",
+    "total_predictions": 8
   },
   "predictions_by_bylaw": {
-    "BL-001": {
+    "BL-005": {
       "entries": [
         {
-          "timestamp": "2026-05-03T18:21:31.045485",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1570095140-640_adpp_is.mp4",
-          "frames_extracted": 32,
-          "frames_flagged_by_yolo": 20,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.4049953818321228,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:22:13.168639",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1500018853-640_adpp_is.mp4",
-          "frames_extracted": 29,
-          "frames_flagged_by_yolo": 1,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.7900345921516418,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:23:00.751851",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-2184740787-640_adpp_is.mp4",
-          "frames_extracted": 66,
-          "frames_flagged_by_yolo": 61,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.7586427330970764,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:23:41.140865",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1692420320-640_adpp_is.mp4",
-          "frames_extracted": 20,
-          "frames_flagged_by_yolo": 8,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.9245779514312744,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:24:22.949243",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1336907315-640_adpp_is.mp4",
-          "frames_extracted": 51,
-          "frames_flagged_by_yolo": 6,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9156253933906555,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:25:15.774223",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-609827286-640_adpp_is.mp4",
-          "frames_extracted": 26,
-          "frames_flagged_by_yolo": 19,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.44667670130729675,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:26:59.416784",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1332227237-640_adpp_is.mp4",
-          "frames_extracted": 38,
-          "frames_flagged_by_yolo": 28,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9695060849189758,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:27:48.600292",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-2083997629-640_adpp_is.mp4",
-          "frames_extracted": 31,
-          "frames_flagged_by_yolo": 29,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.7468599677085876,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:28:20.888952",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1371808153-640_adpp_is.mp4",
-          "frames_extracted": 19,
-          "frames_flagged_by_yolo": 17,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.6912651062011719,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:28:55.022480",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1496170863-640_adpp_is.mp4",
-          "frames_extracted": 39,
-          "frames_flagged_by_yolo": 36,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.9919372797012329,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:29:30.422406",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-2184712525-640_adpp_is.mp4",
-          "frames_extracted": 56,
-          "frames_flagged_by_yolo": 42,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.47391054034233093,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:30:03.475007",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-2184713106-640_adpp_is.mp4",
-          "frames_extracted": 37,
-          "frames_flagged_by_yolo": 7,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.6033068895339966,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:30:32.392702",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1332126987-640_adpp_is.mp4",
-          "frames_extracted": 30,
-          "frames_flagged_by_yolo": 25,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.7223073840141296,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:30:51.143641",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1335016811-640_adpp_is.mp4",
-          "frames_extracted": 35,
-          "frames_flagged_by_yolo": 32,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.8149352669715881,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:31:19.068048",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/stock-footage-furry-husky-dog-walks-on-white-snowy-winter-path-on-leash-pov.mp4",
-          "frames_extracted": 32,
+          "timestamp": "2026-06-06T05:29:19.917369",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke1.mp4",
+          "frames_extracted": 372,
           "frames_flagged_by_yolo": 0,
           "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 1.0,
-            "reasoning": "No frames were flagged by initial triage."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:31:54.493402",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/stock-footage-brown-husky-dog-walking-in-winter-snow-siberian-husky-dog-outdoor.mp4",
-          "frames_extracted": 17,
-          "frames_flagged_by_yolo": 0,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 1.0,
-            "reasoning": "No frames were flagged by initial triage."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:32:18.313876",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/stock-footage-red-stray-dog-walking-in-the-snow.mp4",
-          "frames_extracted": 21,
-          "frames_flagged_by_yolo": 1,
-          "model_prediction": {
-            "bylaw": "BL-001",
+            "bylaw": "BL-005",
             "violated": true,
-            "confidence": 0.8969969749450684,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:32:38.689166",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/stock-footage-curious-dog-sniffs-a-freshly-fallen-blanket-of-snow-while-walking-on-a-hilly-meadow-young-brown.mp4",
-          "frames_extracted": 39,
-          "frames_flagged_by_yolo": 10,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.8803665637969971,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-10T21:13:20.077179",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1336907315-640_adpp_is.mp4",
-          "frames_extracted": 51,
-          "frames_flagged_by_yolo": 6,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9156253933906555,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-10T21:14:40.208374",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-2184712525-640_adpp_is.mp4",
-          "frames_extracted": 56,
-          "frames_flagged_by_yolo": 42,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.47391054034233093,
-            "reasoning": "Detected potential violation of Leash Law"
+            "confidence": 0.8943357467651367,
+            "reasoning": "Detected potential violation of Fire Hazard"
           },
           "user_feedback": {
             "bylaw_correct": true,
@@ -443,720 +25,42 @@
             "corrected_violated": null
           },
           "final_label": {
-            "bylaw": "BL-001",
+            "bylaw": "BL-005",
             "violated": true
           }
         },
         {
-          "timestamp": "2026-05-10T21:15:13.396411",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/stock-footage-brown-husky-dog-walking-in-winter-snow-siberian-husky-dog-outdoor.mp4",
-          "frames_extracted": 17,
-          "frames_flagged_by_yolo": 0,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 1.0,
-            "reasoning": "No frames were flagged by initial triage."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-001",
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-10T21:16:41.526212",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-001 Leash Law/istockphoto-1332126987-640_adpp_is.mp4",
-          "frames_extracted": 30,
-          "frames_flagged_by_yolo": 25,
-          "model_prediction": {
-            "bylaw": "BL-001",
-            "violated": true,
-            "confidence": 0.7223073840141296,
-            "reasoning": "Detected potential violation of Leash Law"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-001",
-            "violated": true
-          }
-        }
-      ],
-      "total_count": 22,
-      "violations_count": 13
-    },
-    "BL-003": {
-      "entries": [
-        {
-          "timestamp": "2026-05-03T18:33:20.152678",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1276522002-640_adpp_is.mp4",
-          "frames_extracted": 96,
-          "frames_flagged_by_yolo": 53,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.8718607425689697,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:34:06.372740",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1277393619-640_adpp_is.mp4",
-          "frames_extracted": 36,
-          "frames_flagged_by_yolo": 32,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.9956448078155518,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:35:02.012409",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1311241464-640_adpp_is.mp4",
-          "frames_extracted": 21,
-          "frames_flagged_by_yolo": 0,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 1.0,
-            "reasoning": "No frames were flagged by initial triage."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-003",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:35:38.790256",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1295449403-640_adpp_is.mp4",
-          "frames_extracted": 35,
-          "frames_flagged_by_yolo": 21,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.9676896333694458,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:35:57.719551",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1437825779-640_adpp_is.mp4",
-          "frames_extracted": 33,
-          "frames_flagged_by_yolo": 2,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.9152137637138367,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:36:23.547279",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1276436668-640_adpp_is.mp4",
-          "frames_extracted": 24,
-          "frames_flagged_by_yolo": 10,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.7006309628486633,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-003",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:36:46.562391",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1244930713-640_adpp_is.mp4",
-          "frames_extracted": 28,
-          "frames_flagged_by_yolo": 23,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.4820489287376404,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:37:05.148903",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1163808677-640_adpp_is.mp4",
-          "frames_extracted": 13,
-          "frames_flagged_by_yolo": 7,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.9730709195137024,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:37:25.810369",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1629911730-640_adpp_is.mp4",
-          "frames_extracted": 19,
-          "frames_flagged_by_yolo": 12,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.9297839999198914,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:38:51.089721",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-2102228214-640_adpp_is.mp4",
-          "frames_extracted": 12,
-          "frames_flagged_by_yolo": 5,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.7372384667396545,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": false,
-            "corrected_bylaw": null,
-            "corrected_violated": false
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:39:14.783087",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1173750235-640_adpp_is.mp4",
-          "frames_extracted": 29,
-          "frames_flagged_by_yolo": 13,
-          "model_prediction": {
-            "bylaw": "BL-004",
-            "violated": true,
-            "confidence": 0.41234198212623596,
-            "reasoning": "Detected potential violation of Public Violence / Affray"
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": true,
-            "corrected_bylaw": "BL-003",
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:39:32.510735",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/Firefly A white caucasian lady takes a can of coca cola from her bag and throws it on the grass in a.mp4",
-          "frames_extracted": 16,
-          "frames_flagged_by_yolo": 11,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.4416833817958832,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-003",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:39:42.873459",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/literring 2.mp4",
-          "frames_extracted": 16,
-          "frames_flagged_by_yolo": 16,
-          "model_prediction": {
-            "bylaw": "BL-003",
-            "violated": true,
-            "confidence": 0.43191778659820557,
-            "reasoning": "Detected potential violation of Littering Prohibition"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:40:00.007172",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/Firefly A video of a man littering the streets 30999.mp4",
-          "frames_extracted": 16,
-          "frames_flagged_by_yolo": 16,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.6241252422332764,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-003",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-003",
-            "violated": true
-          }
-        }
-      ],
-      "total_count": 14,
-      "violations_count": 8
-    },
-    "BL-002": {
-      "entries": [
-        {
-          "timestamp": "2026-05-03T18:33:48.257590",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1277393382-640_adpp_is.mp4",
-          "frames_extracted": 55,
-          "frames_flagged_by_yolo": 51,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.4126148223876953,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-002",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:34:28.543626",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-1269180059-640_adpp_is.mp4",
-          "frames_extracted": 51,
-          "frames_flagged_by_yolo": 26,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.6959089636802673,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-002",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:38:04.140526",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-003 Littering/istockphoto-847183068-640_adpp_is.mp4",
-          "frames_extracted": 22,
-          "frames_flagged_by_yolo": 17,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.7690097689628601,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:40:27.819990",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-847183068-640_adpp_is.mp4",
-          "frames_extracted": 22,
-          "frames_flagged_by_yolo": 17,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.7690097689628601,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:40:42.038111",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-542788582-640_adpp_is.mp4",
-          "frames_extracted": 30,
-          "frames_flagged_by_yolo": 25,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9263371229171753,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:40:55.189291",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-847202592-640_adpp_is.mp4",
-          "frames_extracted": 47,
-          "frames_flagged_by_yolo": 45,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.7657871246337891,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:41:12.261051",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-2251027864-640_adpp_is.mp4",
-          "frames_extracted": 23,
-          "frames_flagged_by_yolo": 22,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9780250787734985,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:41:25.625805",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-2255656071-640_adpp_is.mp4",
-          "frames_extracted": 19,
-          "frames_flagged_by_yolo": 16,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.7938351035118103,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:41:41.433647",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-1201262790-640_adpp_is.mp4",
-          "frames_extracted": 23,
-          "frames_flagged_by_yolo": 4,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.904885470867157,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:42:02.317908",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/istockphoto-905515150-640_adpp_is (1).mp4",
-          "frames_extracted": 29,
-          "frames_flagged_by_yolo": 5,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9949727058410645,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:42:19.453865",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/test_1.mp4",
-          "frames_extracted": 6,
-          "frames_flagged_by_yolo": 6,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9275081157684326,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:42:37.833829",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/test_2.mp4",
-          "frames_extracted": 16,
-          "frames_flagged_by_yolo": 8,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9985520243644714,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:42:57.126291",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/train_2.mp4",
-          "frames_extracted": 35,
-          "frames_flagged_by_yolo": 5,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.9984991550445557,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:43:13.781147",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-002 Trespassing/train_1.mp4",
-          "frames_extracted": 48,
-          "frames_flagged_by_yolo": 32,
-          "model_prediction": {
-            "bylaw": "BL-002",
-            "violated": true,
-            "confidence": 0.6035367250442505,
-            "reasoning": "Detected potential violation of No Trespassing / Fence Jumping"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-002",
-            "violated": true
-          }
-        }
-      ],
-      "total_count": 14,
-      "violations_count": 14
-    },
-    "BL-004": {
-      "entries": [
-        {
-          "timestamp": "2026-05-03T18:43:49.854266",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-2196828728-640_adpp_is.mp4",
-          "frames_extracted": 50,
-          "frames_flagged_by_yolo": 2,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.8331708908081055,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:44:04.576995",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "frames_extracted": 34,
+          "timestamp": "2026-06-06T05:33:42.161713",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke2.mp4",
+          "frames_extracted": 2705,
           "frames_flagged_by_yolo": 3,
           "model_prediction": {
             "bylaw": "BL-004",
             "violated": true,
-            "confidence": 0.9255875945091248,
+            "confidence": 0.8663321137428284,
             "reasoning": "Detected potential violation of Public Violence / Affray"
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": true,
+            "corrected_bylaw": "BL-005",
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-005",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T05:33:54.742589",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke3.mp4",
+          "frames_extracted": 53,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "BL-005",
+            "violated": true,
+            "confidence": 0.9999125003814697,
+            "reasoning": "Detected potential violation of Fire Hazard"
           },
           "user_feedback": {
             "bylaw_correct": true,
@@ -1165,218 +69,108 @@
             "corrected_violated": null
           },
           "final_label": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true
           }
         },
         {
-          "timestamp": "2026-05-03T18:44:27.233926",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1354221439-640_adpp_is.mp4",
-          "frames_extracted": 14,
-          "frames_flagged_by_yolo": 13,
+          "timestamp": "2026-06-06T05:34:20.295938",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke4.mp4",
+          "frames_extracted": 24,
+          "frames_flagged_by_yolo": 5,
           "model_prediction": {
             "bylaw": "NONE",
             "violated": false,
-            "confidence": 0.4858051836490631,
-            "reasoning": "No violations detected in the image."
+            "confidence": 1.0,
+            "reasoning": "No violations detected with sufficient confidence."
           },
           "user_feedback": {
             "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-005",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-005",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T05:34:42.770288",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke5.mp4",
+          "frames_extracted": 257,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "BL-005",
+            "violated": true,
+            "confidence": 0.9998663663864136,
+            "reasoning": "Detected potential violation of Fire Hazard"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
             "violation_correct": true,
-            "corrected_bylaw": "BL-004",
+            "corrected_bylaw": null,
             "corrected_violated": null
           },
           "final_label": {
-            "bylaw": "BL-004",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:44:47.283074",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-104602262-640_adpp_is.mp4",
-          "frames_extracted": 41,
-          "frames_flagged_by_yolo": 41,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.7148115634918213,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true
           }
         },
         {
-          "timestamp": "2026-05-03T18:45:28.934163",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/gun1.mp4",
-          "frames_extracted": 65,
-          "frames_flagged_by_yolo": 65,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.9713013172149658,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:45:46.502666",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/gun2.mp4",
-          "frames_extracted": 17,
+          "timestamp": "2026-06-06T05:35:06.445040",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke6.mp4",
+          "frames_extracted": 158,
           "frames_flagged_by_yolo": 1,
           "model_prediction": {
             "bylaw": "NONE",
             "violated": false,
-            "confidence": 0.5025045275688171,
-            "reasoning": "No violations detected in the image."
+            "confidence": 1.0,
+            "reasoning": "No violations detected with sufficient confidence."
           },
           "user_feedback": {
             "bylaw_correct": false,
             "violation_correct": false,
-            "corrected_bylaw": "BL-004",
+            "corrected_bylaw": "BL-005",
             "corrected_violated": true
           },
           "final_label": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true
           }
         },
         {
-          "timestamp": "2026-05-03T18:46:07.628068",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/gun3.mp4",
-          "frames_extracted": 85,
-          "frames_flagged_by_yolo": 77,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.9479260444641113,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:46:33.203951",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/CCTV Captures Terrifying Moment Leopard Attacks Pet Dog (1).mp4",
-          "frames_extracted": 95,
-          "frames_flagged_by_yolo": 15,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.871938943862915,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:47:04.620550",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_04.mp4",
-          "frames_extracted": 11,
-          "frames_flagged_by_yolo": 8,
-          "model_prediction": {
-            "bylaw": "BL-004",
-            "violated": true,
-            "confidence": 0.6239638924598694,
-            "reasoning": "Detected potential violation of Public Violence / Affray"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:48:11.105413",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_01.mp4",
-          "frames_extracted": 11,
-          "frames_flagged_by_yolo": 11,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.40514448285102844,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:48:32.092579",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/schoolfight2.mp4",
-          "frames_extracted": 66,
+          "timestamp": "2026-06-06T05:36:11.251951",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke7.mp4",
+          "frames_extracted": 247,
           "frames_flagged_by_yolo": 55,
           "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.8179161548614502,
-            "reasoning": "No violations detected in the image."
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.8660176396369934,
+            "reasoning": "Detected potential violation of Gym Accident"
           },
           "user_feedback": {
             "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
+            "violation_correct": true,
+            "corrected_bylaw": "BL-005",
+            "corrected_violated": null
           },
           "final_label": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true
           }
         },
         {
-          "timestamp": "2026-05-03T18:48:44.345495",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/Firefly Two students in a school indulge in a fight, one proceeds to punch the other. The camera ang.mp4",
-          "frames_extracted": 11,
-          "frames_flagged_by_yolo": 11,
+          "timestamp": "2026-06-06T05:41:08.685458",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke8.mp4",
+          "frames_extracted": 1677,
+          "frames_flagged_by_yolo": 1053,
           "model_prediction": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true,
-            "confidence": 0.9832066297531128,
-            "reasoning": "Detected potential violation of Public Violence / Affray"
+            "confidence": 0.9679773449897766,
+            "reasoning": "Detected potential violation of Fire Hazard"
           },
           "user_feedback": {
             "bylaw_correct": true,
@@ -1385,249 +179,13 @@
             "corrected_violated": null
           },
           "final_label": {
-            "bylaw": "BL-004",
+            "bylaw": "BL-005",
             "violated": true
           }
-        },
-        {
-          "timestamp": "2026-05-03T22:21:13.035166",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_04.mp4",
-          "frames_extracted": 11,
-          "frames_flagged_by_yolo": 8,
-          "model_prediction": {
-            "bylaw": "BL-004",
-            "violated": true,
-            "confidence": 0.6239638924598694,
-            "reasoning": "Detected potential violation of Public Violence / Affray"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-10T18:21:18.616252",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "frames_extracted": 34,
-          "frames_flagged_by_yolo": 3,
-          "model_prediction": {
-            "bylaw": "BL-004",
-            "violated": true,
-            "confidence": 0.9255875945091248,
-            "reasoning": "Detected potential violation of Public Violence / Affray"
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-10T18:24:48.493823",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1354221439-640_adpp_is.mp4",
-          "frames_extracted": 14,
-          "frames_flagged_by_yolo": 13,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.4858051836490631,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        },
-        {
-          "timestamp": "2026-05-10T18:28:45.191629",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-104602262-640_adpp_is.mp4",
-          "frames_extracted": 41,
-          "frames_flagged_by_yolo": 41,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.7148115634918213,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": false,
-            "violation_correct": false,
-            "corrected_bylaw": "BL-004",
-            "corrected_violated": true
-          },
-          "final_label": {
-            "bylaw": "BL-004",
-            "violated": true
-          }
-        }
-      ],
-      "total_count": 16,
-      "violations_count": 15
-    },
-    "NONE": {
-      "entries": [
-        {
-          "timestamp": "2026-05-03T18:45:08.210584",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/schoolfight1.mp4",
-          "frames_extracted": 71,
-          "frames_flagged_by_yolo": 52,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.9811668992042542,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "NONE",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:46:50.327514",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_05.mp4",
-          "frames_extracted": 11,
-          "frames_flagged_by_yolo": 10,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.7300664186477661,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "NONE",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:47:27.804271",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_03.mp4",
-          "frames_extracted": 12,
-          "frames_flagged_by_yolo": 8,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.8103736042976379,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "NONE",
-            "violated": false
-          }
-        },
-        {
-          "timestamp": "2026-05-03T18:47:47.025116",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/demo_02.mp4",
-          "frames_extracted": 12,
-          "frames_flagged_by_yolo": 12,
-          "model_prediction": {
-            "bylaw": "NONE",
-            "violated": false,
-            "confidence": 0.42227739095687866,
-            "reasoning": "No violations detected in the image."
-          },
-          "user_feedback": {
-            "bylaw_correct": true,
-            "violation_correct": true,
-            "corrected_bylaw": null,
-            "corrected_violated": null
-          },
-          "final_label": {
-            "bylaw": "NONE",
-            "violated": false
-          }
-        }
-      ],
-      "total_count": 4,
-      "violations_count": 0
-    },
-    "ERRORS": {
-      "entries": [
-        {
-          "timestamp": "2026-05-10T18:00:15.205818",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:03:59.038807",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:05:19.576965",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:07:12.104698",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:08:14.523525",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:09:01.226157",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:10:29.977521",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "Cannot handle this data type: (1, 1, 3), <f4",
-          "status": "failed"
-        },
-        {
-          "timestamp": "2026-05-10T18:13:27.938625",
-          "video_file": "C:/Users/Himanshu/Downloads/WIL_final/Videos/BL-004 Violence/istockphoto-1806781225-640_adpp_is.mp4",
-          "error": "name 'np' is not defined",
-          "status": "failed"
         }
       ],
       "total_count": 8,
-      "violations_count": 0
+      "violations_count": 8
     }
   }
 }
