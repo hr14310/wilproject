@@ -1,8 +1,8 @@
 {
   "metadata": {
     "created": "2026-05-03T18:21:31.044460",
-    "last_updated": "2026-05-10T21:16:41.526212",
-    "total_predictions": 78
+    "last_updated": "2026-06-06T04:25:39.086040",
+    "total_predictions": 96
   },
   "predictions_by_bylaw": {
     "BL-001": {
@@ -1628,6 +1628,420 @@
       ],
       "total_count": 8,
       "violations_count": 0
+    },
+    "BL-007": {
+      "entries": [
+        {
+          "timestamp": "2026-06-06T01:20:49.806940",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym1.mp4",
+          "frames_extracted": 28,
+          "frames_flagged_by_yolo": 28,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.600900411605835,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:21:18.030003",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym2.mp4",
+          "frames_extracted": 24,
+          "frames_flagged_by_yolo": 14,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9993232488632202,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:21:53.654486",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym3.mp4",
+          "frames_extracted": 30,
+          "frames_flagged_by_yolo": 29,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9932679533958435,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:22:36.783515",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym4.mp4",
+          "frames_extracted": 15,
+          "frames_flagged_by_yolo": 5,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9126036167144775,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": false,
+            "corrected_bylaw": null,
+            "corrected_violated": false
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": false
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:23:09.826201",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym5.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 4,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9952031373977661,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:26:08.803169",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym9.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 20,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.8062272071838379,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": false,
+            "corrected_bylaw": null,
+            "corrected_violated": false
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": false
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:26:35.804452",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym10.mp4",
+          "frames_extracted": 57,
+          "frames_flagged_by_yolo": 17,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9961446523666382,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:27:08.122442",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym11.mp4",
+          "frames_extracted": 40,
+          "frames_flagged_by_yolo": 16,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.5305712819099426,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:39:27.541995",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym12.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 20,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9956139326095581,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:41:07.522962",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym13.mp4",
+          "frames_extracted": 52,
+          "frames_flagged_by_yolo": 48,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.8270374536514282,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": false,
+            "corrected_bylaw": null,
+            "corrected_violated": false
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": false
+          }
+        },
+        {
+          "timestamp": "2026-06-06T01:41:47.003252",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/gymaccidents/gym14.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 18,
+          "model_prediction": {
+            "bylaw": "BL-007",
+            "violated": true,
+            "confidence": 0.9466946125030518,
+            "reasoning": "Detected potential violation of Gym Accident"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": false,
+            "corrected_bylaw": null,
+            "corrected_violated": false
+          },
+          "final_label": {
+            "bylaw": "BL-007",
+            "violated": false
+          }
+        }
+      ],
+      "total_count": 11,
+      "violations_count": 7
+    },
+    "BL-005": {
+      "entries": [
+        {
+          "timestamp": "2026-06-06T04:15:34.828220",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/firesmoke/firesmoke1.mp4",
+          "frames_extracted": 372,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "NONE",
+            "violated": false,
+            "confidence": 1.0,
+            "reasoning": "No frames were flagged by initial triage."
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-005",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-005",
+            "violated": true
+          }
+        }
+      ],
+      "total_count": 1,
+      "violations_count": 1
+    },
+    "BL-006": {
+      "entries": [
+        {
+          "timestamp": "2026-06-06T04:17:44.602791",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall1.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "NONE",
+            "violated": false,
+            "confidence": 1.0,
+            "reasoning": "No frames were flagged by initial triage."
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-006",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T04:18:11.960244",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall2.mp4",
+          "frames_extracted": 30,
+          "frames_flagged_by_yolo": 4,
+          "model_prediction": {
+            "bylaw": "BL-006",
+            "violated": true,
+            "confidence": 0.5726879239082336,
+            "reasoning": "Detected potential violation of Worker Fall"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T04:22:13.106185",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall3.mp4",
+          "frames_extracted": 20,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "NONE",
+            "violated": false,
+            "confidence": 1.0,
+            "reasoning": "No frames were flagged by initial triage."
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-006",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T04:24:26.120195",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall4.mp4",
+          "frames_extracted": 11,
+          "frames_flagged_by_yolo": 2,
+          "model_prediction": {
+            "bylaw": "BL-006",
+            "violated": true,
+            "confidence": 0.45386984944343567,
+            "reasoning": "Detected potential violation of Worker Fall"
+          },
+          "user_feedback": {
+            "bylaw_correct": true,
+            "violation_correct": true,
+            "corrected_bylaw": null,
+            "corrected_violated": null
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T04:25:18.826664",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall6.mp4",
+          "frames_extracted": 17,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "NONE",
+            "violated": false,
+            "confidence": 1.0,
+            "reasoning": "No frames were flagged by initial triage."
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-006",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        },
+        {
+          "timestamp": "2026-06-06T04:25:39.086026",
+          "video_file": "C:/Users/Guest1/Documents/RMIT/WIL/wilproject/workerfall/workerfall7.mp4",
+          "frames_extracted": 30,
+          "frames_flagged_by_yolo": 0,
+          "model_prediction": {
+            "bylaw": "NONE",
+            "violated": false,
+            "confidence": 1.0,
+            "reasoning": "No frames were flagged by initial triage."
+          },
+          "user_feedback": {
+            "bylaw_correct": false,
+            "violation_correct": false,
+            "corrected_bylaw": "BL-006",
+            "corrected_violated": true
+          },
+          "final_label": {
+            "bylaw": "BL-006",
+            "violated": true
+          }
+        }
+      ],
+      "total_count": 6,
+      "violations_count": 6
     }
   }
 }
