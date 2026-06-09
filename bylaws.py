@@ -28,6 +28,18 @@ BYLAWS = [
         "name": "Public Violence / Affray",
         "description": "Physical violence, fighting, or threatening behaviour in public is prohibited.",
         "visual_cues": ["person striking another", "physical altercation between persons", "aggressive threatening gestures", "person attacking another"]
+    },
+    {
+        "id": "BL-005",
+        "name": "Robbery",
+        "description": "Taking property from a person by force, threat, or intimidation is prohibited.",
+        "visual_cues": ["person forcibly taking item from another", "person threatening for valuables", "armed robbery", "person snatching belongings"]
+    },
+    {
+        "id": "BL-006",
+        "name": "Vandalism / Property Damage",
+        "description": "Persons must not deface, damage, or vandalize public or private property.",
+        "visual_cues": ["person spray painting surface", "person vandalizing wall or structure", "person damaging public property", "person writing graffiti"]
     }
 ]
 
